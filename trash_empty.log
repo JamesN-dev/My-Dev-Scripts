@@ -1,0 +1,42 @@
+2025-04-05 10:47:29 - Starting trash analysis...
+2025-04-05 10:47:30 - Location /Users/atetraxx/.Trash: 14627 files, size: 585M
+2025-04-05 10:47:30 - Location /Volumes/SSD-8TRAXx/.Trashes/501: 243 files, size: 1.7G
+2025-04-05 10:47:33 - Starting trash emptying process...
+2025-04-05 10:47:34 - Trash emptied in 1 seconds
+2025-04-05 10:47:34 - Script finished
+2025-04-05 16:21:23 - Starting trash analysis...
+2025-04-05 16:22:36 - Operation cancelled by user
+2025-04-05 16:22:36 - Script finished
+2025-04-05 16:27:11 - Starting trash analysis...
+2025-04-05 16:27:11 - Location /Users/atetraxx/.Trash: 10 files, size:  29M
+2025-04-05 16:27:11 - Location /Volumes/SSD-8TRAXx/.Trashes/501: empty
+2025-04-05 16:29:35 - Starting trash analysis...
+2025-04-05 16:29:35 - Location /Users/atetraxx/.Trash: 10 files, size:  29M
+2025-04-05 16:29:35 - Location /Volumes/SSD-8TRAXx/.Trashes/501: empty
+2025-04-05 16:33:38 - Starting trash analysis...
+2025-04-05 16:33:38 - Location /Users/atetraxx/.Trash: 10 files, size:  29M
+2025-04-05 16:33:38 - Location /Volumes/SSD-8TRAXx/.Trashes/501: empty
+/Users/atetraxx/Developer/Scripts/empty_trash.sh:116: command not found: rm
+2025-04-05 16:39:37 - Starting trash analysis...
+2025-04-05 16:39:37 - Location /Users/atetraxx/.Trash: 10 files, size:  29M
+2025-04-05 16:39:38 - Location /Volumes/SSD-8TRAXx/.Trashes/501: empty
+/Users/atetraxx/Developer/Scripts/empty_trash.sh:116: command not found: rm
+2025-04-05 16:44:14 - Starting trash analysis...
+2025-04-05 16:44:14 - Location /Users/atetraxx/.Trash: 10 files, size:  29M
+2025-04-05 16:44:14 - Location /Volumes/SSD-8TRAXx/.Trashes/501: empty
+2025-04-05 16:44:15 - Starting trash emptying process...
+2025-04-05 16:44:15 - Successfully emptied contents of /Users/atetraxx/.Trash
+2025-04-05 16:44:15 - Trash emptying process completed in 0 seconds
+2025-04-05 16:44:15 - Script finished
+2025-04-05 16:58:04 - Starting trash analysis...
+2025-04-05 16:58:04 - Location /Users/atetraxx/.Trash: empty
+2025-04-05 16:58:04 - Location /Volumes/SSD-8TRAXx/.Trashes/501: empty
+2025-04-05 16:58:04 - All trash locations analyzed are empty.
+2025-04-05 16:58:04 - Script finished
+2025-04-05 16:58:31 - Starting trash analysis...
+2025-04-05 16:58:31 - Location /Users/atetraxx/.Trash: 1 files, size: 4.0K
+2025-04-05 16:58:31 - Location /Volumes/SSD-8TRAXx/.Trashes/501: empty
+2025-04-05 16:58:32 - Starting trash emptying process...
+2025-04-05 16:58:32 - Successfully emptied contents of /Users/atetraxx/.Trash
+2025-04-05 16:58:32 - Trash emptying process completed in 0 seconds
+2025-04-05 16:58:32 - Script finished
