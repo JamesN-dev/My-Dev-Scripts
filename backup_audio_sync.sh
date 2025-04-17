@@ -45,7 +45,7 @@ rclone sync "/Volumes/SSD-8TRAXx/Audio" remote:/_~SSD-8TRAXx/Audio \
   --log-file="$LOG_FILE" \
   --exclude "Plugins/**" \
   --exclude ".*" \
-  --modify-window 2s
+  --modify-window 2s \
   --transfers=10 \
   --checkers=32 \
   --drive-chunk-size=64M \
@@ -66,7 +66,7 @@ echo "ANNUAL SYNC for /Audio completed at $(date) with exit code $RCLONE_EXIT_CO
 # --- Log Cleanup ---
 # Cleans up logs for *this* script
 find "$LOG_DIR" -type f -name "annual_sync_audio_*.log" -mtime +30 -delete
-echo "Old annual sync log files deleted (if any older than 30 days)." | tee -a "$LOG_FILE"
+echo "Old annual sync log files deleted from backup_logs/ (if any older than 30 days)." | tee -a "$LOG_FILE"
 
 # --- Exit ---
 exit $RCLONE_EXIT_CODE

@@ -1,8 +1,8 @@
-# 🛠️ Developer Scripts
+## 🛠️ Developer Scripts
 
 A small toolbox of useful shell scripts for managing backups, cleaning up junk, and handling media files.  
 **Note:** These scripts are written for my specific file paths and setups.  
-🧠 **Before using, make sure to check and adjust any file paths to match your environment.**
+ **Before using, make sure to check and adjust any file paths to match your environment.**
 
 ---
 
@@ -25,10 +25,10 @@ Defaults to listing the files. Use the `--nuke` flag to actually delete instead 
 ### 🔧 `fix_wav.sh`
 Removes metadata from WAV files in-place using `sox`, optionally converts to 44.1kHz if needed. Helps with Recycle compatibility.
 
-### ⚙️ `update_configs.sh`
-Syncs configuration files between local dotfiles and other systems. Optionally commits to git and logs changes.
+### ⚙️ `**update_configs.sh**
+This script syncs key config files (VS Code settings, keybindings, and custom Oh My Zsh configs) into a local staging folder and commits them to my **public dotfiles repository**. It uses a custom Git command (--git-dir and --work-tree) to operate on that repo cleanly without affecting the rest of my system. **You probably shouldnt use this one as its highly specific to my convoluted .dotfiles configurations.**
 
----
+------
 
 ### ⚠️ Use at your own risk  
 These scripts are powerful, and some will delete files. Always dry-run or inspect before using in a production environment.

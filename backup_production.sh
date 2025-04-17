@@ -2,7 +2,7 @@
 
 # --- Log Setup ---
 # Define log directory and timestamped log file name FIRST
-LOG_DIR="/Users/atetraxx/Developer/Scripts/backup_logs"
+LOG_DIR="$(dirname "$0")/backup_logs"
 mkdir -p "$LOG_DIR" # Ensure log directory exists
 TIMESTAMP=$(date +"%Y-%m-%d_%H-%M")
 # Use a distinct name for this script's logs
@@ -33,8 +33,8 @@ echo "Starting Production backup at $(date +"%Y-%m-%d %H:%M:%S"). Logging to: $L
 rclone copy "/Volumes/SSD-8TRAXx/Audio/Production" remote:/_~SSD-8TRAXx/Audio/Production \
   --progress \
   --stats=3s \
-  --log-file="$LOG_FILE" \          # Use timestamped log file
-  --log-file-max-size 5M \         # Add rclone's rotation flag
+  --log-file="$LOG_FILE" \  # Use timestamped log file
+  --log-file-max-size 5M \  # Enable log file size-based rotation
   --ignore-existing \
   --exclude "Plugins/**" \
   --exclude ".*" \

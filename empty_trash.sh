@@ -25,7 +25,7 @@ _id="/usr/bin/id"
 _rm="/bin/rm"
 
 # Set up logging
-LOG_DIR="$HOME/Developer/Scripts"
+LOG_DIR="$HOME/Developer/Scripts/backup_logs"
 LOG_FILE="$LOG_DIR/trash_empty.log"
 MAX_LOG_SIZE=$((5 * 1024 * 1024)) # 5MB in bytes
 # Use full path for mkdir

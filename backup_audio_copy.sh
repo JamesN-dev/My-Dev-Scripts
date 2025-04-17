@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # --- Log Setup ---
-LOG_DIR="/Users/atetraxx/Developer/Scripts/backup_logs"
+LOG_DIR="${HOME}/Developer/Scripts/backup_logs"
 mkdir -p "$LOG_DIR" # Ensure log directory exists
 TIMESTAMP=$(date +"%Y-%m-%d_%H-%M")
 # Log file name specific to regular copy backups
@@ -30,9 +30,17 @@ EOF
 # --- Script Start ---
 echo "Starting REGULAR COPY backup for /Audio at $(date). Logging to: $LOG_FILE" | tee -a "$LOG_FILE"
 
-# --- Rclone Copy Command (Optimized) ---
+# --- Rclone Copy Command ---
+SOURCE="/Volumes/SSD-8TRAXx/Audio"
+DESTINATION="remote:/_~SSD-8TRAXx/Audio"
+
+if [ ! -d "$SOURCE" ]; then
+  echo "Source directory not found: $SOURCE" | tee -a "$LOG_FILE"
+  exit 1
+fi
+
 # Copies new/changed files, does NOT delete destination files
-rclone copy "/Volumes/SSD-8TRAXx/Audio" remote:/_~SSD-8TRAXx/Audio \
+rclone copy "$SOURCE" "$DESTINATION" \
   --progress \
   --stats=3s \
   --log-file="$LOG_FILE" \
@@ -58,8 +66,8 @@ echo "REGULAR COPY backup for /Audio completed at $(date) with exit code $RCLONE
 
 # --- Log Cleanup ---
 # Cleans up logs for *this* script
-find "$LOG_DIR" -type f -name "backup_audio_copy_*.log" -mtime +30 -delete
-echo "Old regular copy log files deleted (if any older than 30 days)." | tee -a "$LOG_FILE"
+find "${HOME}/Developer/Scripts/backup_logs" -type f -name "backup_audio_copy_*.log" -mtime +30 -delete
+echo "Old regular copy log files deleted from backup_logs/ (if any older than 30 days)." | tee -a "$LOG_FILE"
 
 # --- Exit ---
 exit $RCLONE_EXIT_CODE
