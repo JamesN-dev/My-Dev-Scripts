@@ -1,5 +1,4 @@
 archive/
 backup_logs/
-empty_trash.sh
-trash_empty.log
-rclone_log.txt
+*.log
+*.txt
