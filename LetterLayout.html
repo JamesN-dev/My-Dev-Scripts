@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Image Sheet</title>
+  <style>
+    @page { size: 8.5in 11in; margin: 0.5in; }
+    body {
+      width: 8.5in;
+      height: 11in;
+      margin: 0;
+      padding: 0.5in;
+      box-sizing: border-box;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+      align-items: flex-start;
+      font-family: sans-serif;
+    }
+    img {
+      max-width: calc(50% - 12px);
+      height: auto;
+      object-fit: contain;
+      box-shadow: 0 0 4px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+  <img src="https://cdnimg.webstaurantstore.com/images/products/large/3383/1215218.jpg" alt="Image 1">
+  <img src="https://cdnimg.webstaurantstore.com/images/products/large/3383/1215219.jpg" alt="Image 2">
+  <img src="https://cdnimg.webstaurantstore.com/images/products/large/3383/1214289.jpg" alt="Image 3">
+  <img src="https://cdnimg.webstaurantstore.com/images/products/large/3383/1214290.jpg" alt="Image 4">
+  <img src="https://cdnimg.webstaurantstore.com/images/products/large/3383/1215223.jpg" alt="Image 5">
+  <img src="https://cdnimg.webstaurantstore.com/images/products/large/3383/1215221.jpg" alt="Image 6">
+</body>
+</html>
